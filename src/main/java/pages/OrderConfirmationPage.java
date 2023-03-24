@@ -26,4 +26,5 @@ public class OrderConfirmationPage extends PredefinedActions {
         Thread.sleep(5000);
         return getElementText(confirmationText,true);
     }
+    
 }
