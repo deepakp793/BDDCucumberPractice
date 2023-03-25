@@ -25,12 +25,13 @@ public class FirstLoginPage extends PredefinedActions {
     private WebElement tees;
 
     private FirstLoginPage(){
-        PageFactory.initElements(driver,this);
+
     }
 
     public static FirstLoginPage getObject(){
         if(firstLoginPage==null)
             firstLoginPage = new FirstLoginPage();
+        PageFactory.initElements(driver,firstLoginPage);
         return firstLoginPage;
     }
 

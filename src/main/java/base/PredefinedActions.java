@@ -1,8 +1,6 @@
 package base;
 
 import constant.ConstantValue;
-import io.cucumber.java.en_old.Ac;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -96,10 +94,7 @@ public class PredefinedActions {
     }
 
     public static void wrapUp() {
-        driver.close();
+        driver.quit();
     }
 
-
 }
-
-

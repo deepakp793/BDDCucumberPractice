@@ -14,7 +14,7 @@ public class AutomationHooks {
     }
 
     @After
-    public void afterMethod(Scenario scenario){
+    public void afterScenario(Scenario scenario){
         PredefinedActions.wrapUp();
     }
 }

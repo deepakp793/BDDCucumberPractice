@@ -13,15 +13,15 @@ public class LoginStep {
 
     @Given("user click on provided url")
     public void user_click_on_provided_url() {
-        PredefinedActions.start("https://magento.softwaretestingboard.com/");
+
 
     }
 
     @Then("Verify Luma website is launched")
     public void verify_luma_website_is_launched() {
         String actualPageTitle = PredefinedActions.getPageTitle();
-        String expedctedPageTitle = "Magento eCommerce";
-        Assert.assertTrue("Actual Page Title is" + actualPageTitle, actualPageTitle.contains(expedctedPageTitle));
+        String expedctedPageTitle = "Home Page";
+        Assert.assertTrue("Actual Page Title is " + actualPageTitle, actualPageTitle.contains(expedctedPageTitle));
     }
 
     LoginPage login = LoginPage.getObject();

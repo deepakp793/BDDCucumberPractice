@@ -9,9 +9,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features=".\\src\\test\\java\\featureFiles\\",
         glue ="steps",
-        publish = true,
-        //tags ="@sit",
-        dryRun =true
+        publish = true
+        //tags ="@sit"
+        //dryRun =true
 
 )
 

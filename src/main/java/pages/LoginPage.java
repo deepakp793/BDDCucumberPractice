@@ -26,18 +26,19 @@ public class LoginPage extends PredefinedActions {
     private WebElement errorMessageElement;
 
     private LoginPage() {
-        PageFactory.initElements(driver, this);
+
     }
 
     public static LoginPage getObject(){
         if(loginPage==null)
             loginPage= new LoginPage();
+        PageFactory.initElements(driver, loginPage);
         return loginPage;
     }
 
 
     public void clickOnSign() {
-        clickOnElement(signInElement, false);
+        clickOnElement(signInElement, true);
     }
 
     public void enterUserNamePassword(String userName, String password) {
