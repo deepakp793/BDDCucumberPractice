@@ -13,12 +13,12 @@ public class OrderConfirmationPage extends PredefinedActions {
     WebElement confirmationText;
 
     private OrderConfirmationPage(){
-        PageFactory.initElements(driver,this);
     }
 
     public static OrderConfirmationPage getObject(){
         if(orderConfirmationPage==null)
             orderConfirmationPage= new OrderConfirmationPage();
+        PageFactory.initElements(driver,orderConfirmationPage);
         return orderConfirmationPage;
     }
 

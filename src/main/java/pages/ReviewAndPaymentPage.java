@@ -12,12 +12,13 @@ public class ReviewAndPaymentPage extends PredefinedActions {
     WebElement placeOrder;
 
     ReviewAndPaymentPage(){
-        PageFactory.initElements(driver, this);
+
     }
 
     public static ReviewAndPaymentPage getObject(){
         if(reviewAndPaymentPage==null)
             reviewAndPaymentPage = new ReviewAndPaymentPage();
+        PageFactory.initElements(driver, reviewAndPaymentPage);
         return  reviewAndPaymentPage;
     }
 

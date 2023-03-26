@@ -14,12 +14,13 @@ public class ProductPage extends PredefinedActions {
     List<WebElement> listOfTees;
 
     private ProductPage(){
-        PageFactory.initElements(driver,this);
+
     }
 
     public static ProductPage getObject(){
         if(productPage==null)
             productPage=new ProductPage();
+        PageFactory.initElements(driver,productPage);
         return productPage;
     }
 

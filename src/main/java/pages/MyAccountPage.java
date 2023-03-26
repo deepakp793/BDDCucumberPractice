@@ -17,12 +17,13 @@ public class MyAccountPage extends PredefinedActions {
 
 
     private MyAccountPage(){
-        PageFactory.initElements(driver,this);
+
     }
     
     public static MyAccountPage getObject() {	
     	if(myAccountPage==null)
     		myAccountPage=new MyAccountPage();
+        PageFactory.initElements(driver,myAccountPage);
     	return myAccountPage;
     }
 

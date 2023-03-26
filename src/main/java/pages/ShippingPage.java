@@ -12,12 +12,13 @@ public class ShippingPage extends PredefinedActions {
     WebElement next;
 
     private ShippingPage(){
-        PageFactory.initElements(driver,this);
+
     }
 
     public static ShippingPage getObject(){
         if(shippingPage==null)
             shippingPage = new ShippingPage();
+        PageFactory.initElements(driver,shippingPage);
         return shippingPage;
     }
 

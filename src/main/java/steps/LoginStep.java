@@ -20,8 +20,8 @@ public class LoginStep {
     @Then("Verify Luma website is launched")
     public void verify_luma_website_is_launched() {
         String actualPageTitle = PredefinedActions.getPageTitle();
-        String expedctedPageTitle = "Home Page";
-        Assert.assertTrue("Actual Page Title is " + actualPageTitle, actualPageTitle.contains(expedctedPageTitle));
+        String expectedPageTitle = "Home Page";
+        Assert.assertTrue("Actual Page Title is " + actualPageTitle, actualPageTitle.contains(expectedPageTitle));
     }
 
     LoginPage login = LoginPage.getObject();

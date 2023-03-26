@@ -30,12 +30,13 @@ public class ProductSpecificationPage extends PredefinedActions {
 
 
     private ProductSpecificationPage(){
-        PageFactory.initElements(driver, this);
+
     }
 
     public static ProductSpecificationPage getObject(){
         if(productSpecificationPage==null)
             productSpecificationPage = new ProductSpecificationPage();
+        PageFactory.initElements(driver, productSpecificationPage);
         return productSpecificationPage;
     }
 
