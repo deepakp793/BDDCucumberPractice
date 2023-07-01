@@ -16,9 +16,9 @@ public class FirstLoginPageSteps {
 
     @When("User select Tees from Dropdown")
     public void user_select_tees_from_dropdown() {
-        firstLoginPage.hoverOnMenMenu();
-        firstLoginPage.hoverToTopMenu();
-        firstLoginPage.clickOnTees();
+            firstLoginPage.hoverOnMenMenu();
+            firstLoginPage.hoverToTopMenu();
+            firstLoginPage.clickOnTees();
     }
 
 }
